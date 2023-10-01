@@ -1,3 +1,5 @@
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -119,13 +121,20 @@ li{
 .street{
     background-color: #f2f2f2;
     width: 100%;
+   
 }
 
-.street > h1{
+.street img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.street h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    padding-top: 20px;
+    
+    
     text-align: center;
 }
 .street h2{
@@ -157,7 +166,7 @@ main{
 }
 
 #ingredients{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #ingredients ul li{
@@ -213,16 +222,12 @@ menu li a{
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    /* margin-left: -80px; */
-    /* margin-right: 40px; */
+ 
 }
 
 
 
-.street img{
-    margin-top: 10px;
-    width: 100%;
-}
+
 
 nav{
     font-family: 'Montserrat', sans-serif;
@@ -257,7 +262,11 @@ nav li{
     list-style: none;
 }
 
-
+nav ul{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 nav ul li img{
       
@@ -272,6 +281,7 @@ label {
     padding: 2px 2px;
     position: relative;
     user-select: none;
+    
 } 
 
 ul {
@@ -286,15 +296,30 @@ ul {
   } */
 
 
- /* #hamburger{
-  
-    max-height: 70px;
-    transition: max-height .2s ease-out;
-    align-items: left;
-    list-style: none;
-    width: 100%;
-    margin-top: 2px;
-} */
+
+nav ul:nth-child(2){
+    flex: 1;
+    position: absolute;
+}
+
+nav ul li:nth-child(1){
+    flex: 1;
+    background-color: #eb5428;
+    right: 175px;
+    position: absolute;
+    top: -2px;
+    right: 120px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+nav ul li:last-child{
+    flex: 1;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    
+}
 
  #hamburger {
     display: flex;
@@ -370,37 +395,14 @@ main{
 }
 
 
-
-/* 
-.svgs ul {
-    overflow: hidden;
-    max-height: 1px;
-    transition: max-height .2s ease-out;
-    align-items: left;
-    list-style: none;
-    width: 100%;
-    margin-top: 2px;
-} */
-
-nav ul:first-child{
-    flex: 1;
-}
-
-nav ul li:nth-child(2){
-    flex: 2;
-    background-color: #eb5428;
-}
-
-nav ul:last-child{
-    flex: 1;
-
-}
+#searchbar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+ }
 
 
-
-nav ul li:nth-child(2){
-    flex: 1;
-}
 
 
 .directions ol li{
@@ -417,79 +419,89 @@ nav ul li:nth-child(2){
         height: 40px;
     }
 
-    #searchbar{
-        display: flex;
-        justify-content: center;
-        margin: 20px;
-     }
+#searchbar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+   
+ }
+
+ #searchbar{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+ }
 
 .sidecontainer a{
-    text-decoration: none;
-    color: black;
+text-decoration: none;
+color: black;
 }
 
 .side{
-    margin-left: 10px;
-    margin-top: 20px;
+margin-left: 10px;
+margin-top: 20px;
 }
 
 .side h3{
-    margin-top: 2px;
-    font-weight: bold;
+margin-top: 2px;
+font-weight: bold;
 }
 
 .side p{
-    margin-top: 25px;
+margin-top: 25px;
 }
 
 
 .mexicanside{
-    display: flex;
-    flex-direction: row;
-   
+display: flex;
+flex-direction: row;
+
 }
 .mexicanside a img{
-    width: 110px;
-    height: 110px;
-    margin-left: 5px;
-    margin-top: 20px;
+width: 110px;
+height: 110px;
+margin-left: 5px;
+margin-top: 20px;
 }
 
 .mexicanside > section > section > img{
-    order: 1;
+order: 1;
 }
 
 .mexicanside > section > section > h3{
-    order: 2;
-   
+order: 2;
+
 }
 
 .mexicanside > section > section > p{
-    order: 3;
+order: 3;
 }
 
 .star-rating{
-    order: 4;
-    margin-top: 30px;
+order: 4;
+margin-top: 30px;
 }
 
 .star-rating p{
-    margin-top: -20px;
-    font-weight: bold;
+margin-top: -20px;
+font-weight: bold;
 }
 
 .star-rating svg{
-    margin-top: 1px;
+margin-top: 1px;
 }
-/* 
+
 .side > .mexicanside{
-    display: flex;
-    flex-direction: column;
-    order: 2;
-} */
+display: flex;
+flex-direction: column;
+order: 2;
+}
+
+
 
 .mexicanside img{
-    width: 100%;
+    width: 30%;
     height: 50%;
 }
 
@@ -505,11 +517,10 @@ nav ul li:nth-child(2){
 
 }
 
-/* 
 .side h3{
     grid-column: 1/-1;
     order: 1;
-} */
+}
 
 
 
@@ -523,6 +534,8 @@ menu li{
     font-size: 20px;
 
 }
+
+
 
 
 #socialmedia li a{
@@ -594,18 +607,29 @@ footer img {
     }
 
 
-    nav {
+  
+     nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; 
         
     }
     nav ul {
         flex: 1;
         display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        border-bottom: none;
+    } 
+
+    nav label{
+        display: none;
+    }
+
+     ul{
+        margin-top: 70px;
+        max-height: 100px;
+    } 
+
+    nav ul li:first-child{
+        margin-left: -120px;
     }
 
     #searchbar{
@@ -617,19 +641,12 @@ footer img {
     }
     
 
-    #hamburger{
-        display: none;
-    }
 
-
-    nav ul li:nth-child(2){
-       margin-right: 20px;
-       margin-bottom: 80px;
-    }
+ 
 
     nav ul li:last-child{
         order: 4;
-        margin-bottom: 70px;
+        margin-bottom: 10px;
     }
 
 
@@ -711,20 +728,22 @@ footer img {
         font-weight: bold;
     }
 
-    
+    /* nav h3 input{
+        display: none;
+    } */
 
-   nav ul li:not(:first-child):not(:nth-child(2)):not(:last-child){
+   /* nav ul li:not(:first-child):not(:last-child){
     display: flex;
-    /* order: 3; */
+    order: 3;
     margin-top: 50px;
    
  
-}
+} */
 
 
 
 #searchbar{
-    margin-top: -140px;
+    margin-top: -20px;
   
 }
 
@@ -773,7 +792,8 @@ footer img {
 
   
 
-  #socialmedia{
+  #socialmedia svg{
+  
     order: 2;
 }
 
@@ -846,7 +866,7 @@ footer img {
         order: 2;
         left: 0;
         
-    }
+    } 
     
     
     .street{
