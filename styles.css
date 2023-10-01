@@ -145,6 +145,7 @@ ul, li, a, p{
 
 
 
+
 main{
     background-color: #f2f2f2;
     margin-top: -10px;
@@ -256,9 +257,14 @@ nav li{
     list-style: none;
 }
 
-nav ul li:not(:first-child):not(:nth-child(2)):not(:last-child){
+
+
+nav ul li img{
+      
     display: none;
 }
+
+
 
 label {
     cursor: pointer;
@@ -266,10 +272,21 @@ label {
     padding: 2px 2px;
     position: relative;
     user-select: none;
-}
+} 
 
-/* 
-#hamburger{
+ul {
+    max-height: 0;
+    overflow: hidden;
+  }
+  input:checked ~ ul {
+    max-height: 500px;
+  }
+  /* input {
+    display: none;
+  } */
+
+
+ /* #hamburger{
   
     max-height: 70px;
     transition: max-height .2s ease-out;
@@ -278,21 +295,24 @@ label {
     width: 100%;
     margin-top: 2px;
 } */
+
+ #hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #hamburger-checkbox {
     position: absolute;
     top: 10px;
     left: 30px;
-    /* opacity: 0; */
+    opacity: 0;
     width: 40px;
     height: 40px;
 }
 
 
-#hamburger {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 #hamburger label {
     position: relative;
     display: flex;
@@ -302,12 +322,10 @@ label {
     z-index: 1;
     cursor: pointer;
     font-family: "Bebas neue", sans-serif;
-}
+} 
 
-#hamburger-checkbox:checked ~ ul li:not(:first-child):not(:nth-child(2)):not(:last-child){
-    display: flex;
-    
-    }
+
+
 
 .container{
     display: flex;
@@ -594,18 +612,24 @@ footer img {
         position: absolute;
         order: 3;
         right: 130px;
+        margin-bottom: -30px;
        
     }
     
 
-    nav ul li:first-child{
+    #hamburger{
         display: none;
     }
 
 
     nav ul li:nth-child(2){
-        margin-right: 620px;
-        width: 20%;
+       margin-right: 20px;
+       margin-bottom: 80px;
+    }
+
+    nav ul li:last-child{
+        order: 4;
+        margin-bottom: 70px;
     }
 
 
@@ -681,7 +705,8 @@ footer img {
         flex-direction: column;
         text-decoration: none;
         color:#eb5428;
-        margin-bottom: 2px;
+        margin-left: 12px;
+       
         font-size: 12px;
         font-weight: bold;
     }
@@ -690,15 +715,17 @@ footer img {
 
    nav ul li:not(:first-child):not(:nth-child(2)):not(:last-child){
     display: flex;
-    order: 4;
+    /* order: 3; */
+    margin-top: 50px;
+   
  
 }
 
 
 
 #searchbar{
-    margin-top: -80px;
-   
+    margin-top: -140px;
+  
 }
 
     
@@ -734,7 +761,7 @@ footer img {
 
   footer{
     display: flex;
-    
+    margin-top: 10px;
    
   }
   footer img{
@@ -767,6 +794,7 @@ footer img {
  } */
     nav ul li:last-child{
         order: 3;
+       
     }
 
   
@@ -781,7 +809,7 @@ footer img {
     position: initial;
     order: 4;
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 24px; */
 }
 
 
@@ -798,12 +826,26 @@ footer img {
     }
  
 
- 
+    nav ul li:first-child{
+        display: none;
+       
+    }
+    nav ul li:last-child{
+        margin-left: -20px;
+    }
+
+    nav ul li:nth-child(2){
+        position: relative;
+        
+        
+    }
+
+   
     nav ul li:not(:first-child):not(:nth-child(2)):not(:last-child){
-        /* position: relative; */
-      
+     
         order: 2;
         left: 0;
+        
     }
     
     
@@ -889,7 +931,15 @@ dl{
     color: black;
 }
 
+.arrange{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
+.mexicanside{
+    display: flex;
+    flex-direction: column;
+}
 .sidecontainer h2{
     color: black;
  }
