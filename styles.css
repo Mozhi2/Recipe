@@ -844,7 +844,8 @@ footer img {
        
     }
 
-  
+
+    
    nav ul li:nth-child(1){
         order: 1;
     
@@ -898,13 +899,13 @@ footer img {
         display: flex;
         flex-direction: column;
         align-items: right;
-        padding-top: 10px;
+        padding-top: 12px;
         padding-left: 20px;
         padding-bottom: 50px;
         background-color: white;
         margin-right: 1120px;
         line-height: 1.25em;
-        margin-top: 20px;
+        margin-top: 22px;
         border: 1px solid red;
     }
 
@@ -927,7 +928,7 @@ footer img {
     }
 
     .tacostyle img{
-        width: 49.5%;
+        width: 49%;
         margin-left: 88px;
         margin-top: -391.5px; 
     }
@@ -976,6 +977,13 @@ dd, dt{
 }
 
 
+nav ul li:first-child{
+   order: 1;
+}
+
+#ingredients ul li{
+    margin-top: -25px;
+}
 
 
 #ingredients h2{
