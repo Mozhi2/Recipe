@@ -121,8 +121,9 @@ li{
 .street{
     background-color: #f2f2f2;
     width: 100%;
-   
 }
+
+
 
 .street img{
     margin-top: 10px;
@@ -133,9 +134,9 @@ li{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    
-    
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 80px;
 }
 .street h2{
     text-align: center;
@@ -146,6 +147,9 @@ li{
     margin: 10px;
 }
 
+.tacostyle h2{
+    display: none;
+}
 
 ul, li, a, p{
     text-transform: uppercase;
@@ -191,6 +195,9 @@ main{
 #ingredients h2{
     text-align: center;
 }
+
+
+
 
 .linkcolor{
     text-decoration: none;
@@ -241,7 +248,10 @@ nav a{
 
 }
 
-
+nav ul{
+    
+    margin-top: -62px;
+}
 
 nav span{
     font-family: 'Bebas Neue', sans-serif;
@@ -321,7 +331,7 @@ nav ul li:last-child{
     
 }
 
- #hamburger {
+#hamburger {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,6 +365,7 @@ nav ul li:last-child{
 .container{
     display: flex;
     flex-direction: column;
+    
 }
 nav {
     order: 1;
@@ -397,9 +408,9 @@ main{
 
 #searchbar{
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    margin-top: 30px;
+   top: 90px;
  }
 
 
@@ -419,13 +430,13 @@ main{
         height: 40px;
     }
 
-#searchbar{
+/* #searchbar{
     position: relative;
     display: flex;
     justify-content: center;
    
    
- }
+ } */
 
  #searchbar{
     display: flex;
@@ -458,6 +469,15 @@ display: flex;
 flex-direction: row;
 
 }
+.mexicanside h2{
+    display: none;
+}
+
+.arrange h2{
+    display: none;
+}
+
+
 .mexicanside a img{
 width: 110px;
 height: 110px;
@@ -483,6 +503,10 @@ order: 4;
 margin-top: 30px;
 }
 
+
+.star-rating h2{
+    display: none;
+}
 .star-rating p{
 margin-top: -20px;
 font-weight: bold;
@@ -523,20 +547,16 @@ order: 2;
 }
 
 
-
-
-
-
-
-
 menu li{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
 
 }
 
-
-
+#socialmedia ul{
+    max-height: 100px;
+    display: flex;
+}
 
 #socialmedia li a{
     text-decoration: none;
@@ -612,11 +632,13 @@ footer img {
         display: flex;
         justify-content: space-between;
         align-items: center; 
+      
         
     }
     nav ul {
         flex: 1;
         display: flex;
+        margin-top: 60px;
     } 
 
     nav label{
@@ -624,25 +646,27 @@ footer img {
     }
 
      ul{
-        margin-top: 70px;
+        
         max-height: 100px;
     } 
 
-    nav ul li:first-child{
-        margin-left: -120px;
-    }
+  
+    
 
     #searchbar{
         position: absolute;
         order: 3;
         right: 130px;
         margin-bottom: -30px;
-       
+        top: 30px;
     }
     
 
 
- 
+    nav ul li:first-child{
+       margin-right: 476px;
+
+    }
 
     nav ul li:last-child{
         order: 4;
@@ -651,9 +675,6 @@ footer img {
 
 
     
-    ul{
-        margin-left: -10px;
-    }
 
     dl{
         justify-content: center;
@@ -663,31 +684,32 @@ footer img {
 
     #ingredients{
         display: flex;
-        
+       
     }
 
-    #ingredients h2 + h2{
+    /* #ingredients h2 + h2{
         margin-right: -200px;
         margin-left: -80px;
        padding-right: 150px;
         padding-left: 120px;
     
-    }
+    }  */
 
   
-    #ingredients ul{
+    /* #ingredients ul{
         margin-top: 50px;
         margin-bottom: 5px;
-        margin-left: 2px;
+        
+        
 
-    } 
+    }  */
 
-    #ingredients ul li{
+    /* #ingredients ul li{
         line-height: 1em;
-        margin-left: -175px;
+        margin-left: -15px;
         padding-right: 20px;
         margin-right: 20px;
-    }
+    } */
 
     #ingredients ol{
         margin-top: 50px;
@@ -700,10 +722,13 @@ footer img {
         margin-left: -160px;
     }
 
-   
+
+    
     .street h1{
         margin-left: 20px;
         text-align: left;
+        margin-top: -40px;
+        
     }
     
 
@@ -740,6 +765,9 @@ footer img {
  
 } */
 
+.tacostyle h2{
+    display: none;
+}
 
 
 #searchbar{
@@ -792,9 +820,8 @@ footer img {
 
   
 
-  #socialmedia svg{
-  
-    order: 2;
+  #socialmedia{
+      order: 2;
 }
 
 
@@ -805,7 +832,7 @@ footer img {
 
 
     body{
-        max-width: 1280;
+        max-width: 1280px;
         margin: 0 auto;
     }
 
@@ -818,10 +845,8 @@ footer img {
     }
 
   
-   nav ul li:nth-child(2){
-    margin-right: 100px;
-    /* width: 40%; */
-    order: 1;
+   nav ul li:nth-child(1){
+        order: 1;
     
    }
     
@@ -829,14 +854,8 @@ footer img {
     position: initial;
     order: 4;
     width: 100%;
-    /* margin-top: 24px; */
-}
-
-
-
-    nav ul {
-        flex-wrap: nowrap;
     }
+
 
     nav {
         display: flex;
@@ -846,27 +865,22 @@ footer img {
     }
  
 
-    nav ul li:first-child{
-        display: none;
-       
-    }
+  
+    
     nav ul li:last-child{
         margin-left: -20px;
     }
 
-    nav ul li:nth-child(2){
-        position: relative;
-        
-        
-    }
+ 
+    
 
-   
-    nav ul li:not(:first-child):not(:nth-child(2)):not(:last-child){
+  
+    nav ul li:not(:first-child):not(:last-child){
      
         order: 2;
         left: 0;
         
-    } 
+    }  
     
     
     .street{
@@ -883,29 +897,37 @@ footer img {
     .street menu{
         display: flex;
         flex-direction: column;
-        padding-left: 25px;
+        align-items: right;
         padding-top: 10px;
+        padding-left: 20px;
         padding-bottom: 50px;
         background-color: white;
-        margin-right: 680px;
+        margin-right: 1120px;
+        line-height: 1.25em;
         margin-top: 20px;
         border: 1px solid red;
     }
 
     .street menu li{
         padding-top: 40px;
-        padding-bottom: -40px;
-       
+        
     }
 
+
+   
     .tacostyle{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         
 
     }
+
+    .tacostyle h2{
+        display: none;
+    }
+
     .tacostyle img{
-        width: 80.2%;
+        width: 49.5%;
         margin-left: 88px;
         margin-top: -391.5px; 
     }
@@ -913,9 +935,9 @@ footer img {
     .street p{
         display: flex;
         margin-top: -390px;
-        margin-left: 40px;
-        margin-right: 20px;
-        padding-right: 40px;
+        margin-left: -214px;
+        margin-right: 260px;
+        padding-right: 110px;
         line-height: 1.75em;
         
     }
@@ -923,7 +945,7 @@ footer img {
 .street p + p{
     margin-left: 120px;
     margin-right: -370px;
-    margin-top: -270px;
+    margin-top: -320px;
     padding-left: 300px;
 }
 
@@ -943,9 +965,18 @@ h2, dl{
 
 dl{
     display: inline-block;
+    justify-content: center;
     text-align: center;
-    padding-left: 45px;
+    margin-right: 60px;
+    margin-left: 80px;
 }
+
+dd, dt{
+    align-items: center;
+}
+
+
+
 
 #ingredients h2{
     color: black;
@@ -960,6 +991,16 @@ dl{
     display: flex;
     flex-direction: column;
 }
+
+.mexicanside a img{
+    width: 80%;
+    height: 80%;
+    
+}
+
+.mexicanside h2{
+    display: none;
+}
 .sidecontainer h2{
     color: black;
  }
@@ -969,23 +1010,22 @@ dl{
 
  footer {
     display: flex;
-    flex-direction: row;
  }
+ 
 footer img{
     width: 40%;
     margin-top: 30px;
-    margin-right: 200px;
-    order: 1;
-
+    justify-content: left;
+    order: 2;
 }
 
-footer p{
-    margin-left: 100px;
-    margin-top: -140px;
-    margin-bottom: 110px;
+#socialmedia{
+    margin-left: 200px;
 }
 
-
+#socialmedia p{
+    margin-left: -120px;
+}
 
 
 }
