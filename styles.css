@@ -121,6 +121,7 @@ li{
 .street{
     background-color: #f2f2f2;
     width: 100%;
+  
 }
 
 
@@ -173,6 +174,10 @@ main{
     margin-top: 40px;
 }
 
+#ingredients ul{
+    max-height: 500px;
+}
+
 #ingredients ul li{
     margin-top: 10px;
     margin-left: 20px;
@@ -195,8 +200,6 @@ main{
 #ingredients h2{
     text-align: center;
 }
-
-
 
 
 .linkcolor{
@@ -250,7 +253,7 @@ nav a{
 
 nav ul{
     
-    margin-top: -62px;
+    margin-top: 30px;
 }
 
 nav span{
@@ -298,6 +301,7 @@ ul {
     max-height: 0;
     overflow: hidden;
   }
+
   input:checked ~ ul {
     max-height: 500px;
   }
@@ -305,7 +309,7 @@ ul {
     display: none;
   } */
 
-
+  
 
 nav ul:nth-child(2){
     flex: 1;
@@ -620,6 +624,7 @@ footer img {
 	width: 50%;
 }
 
+
 @media screen and (min-width:768px){
 
     body{
@@ -627,8 +632,7 @@ footer img {
     }
 
 
-  
-     nav {
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center; 
@@ -645,11 +649,11 @@ footer img {
         display: none;
     }
 
-     ul{
-        
+     
+    ul{
+        overflow: visible;
         max-height: 100px;
-    } 
-
+    }
   
     
 
@@ -680,10 +684,13 @@ footer img {
         justify-content: center;
     }
 
-    
+    .street{
+        margin-top: 20px;
+    }
 
     #ingredients{
         display: flex;
+        margin-bottom: 40px;
        
     }
 
@@ -696,20 +703,16 @@ footer img {
     }  */
 
   
-    /* #ingredients ul{
+    #ingredients ul{
         margin-top: 50px;
-        margin-bottom: 5px;
-        
-        
+    } 
 
-    }  */
-
-    /* #ingredients ul li{
+    #ingredients ul li{
         line-height: 1em;
-        margin-left: -15px;
-        padding-right: 20px;
-        margin-right: 20px;
-    } */
+       /* justify-content: left; */
+        margin-left: -190px;
+      
+    }
 
     #ingredients ol{
         margin-top: 50px;
@@ -801,10 +804,13 @@ footer img {
     
     .sidecontainer h2{
         text-align: center;
+        margin-top: 20px;
     }
     
-  
 
+    
+ 
+    
 
   footer{
     display: flex;
@@ -836,33 +842,43 @@ footer img {
         margin: 0 auto;
     }
 
- /* nav ul li:first-child{
-    order: 2;
- } */
-    nav ul li:last-child{
-        order: 3;
-       
+    ul{
+        overflow: visible;
+        max-height: 20px;
+   
     }
 
 
+ 
     
-   nav ul li:nth-child(1){
-        order: 1;
-    
-   }
-    
+    nav ul{
+        max-width: 20%;
+       
+    }
+
+    nav ul li:not(:first-child):not(:last-child){
+        margin-left: 80px;
+        margin-top: -55px;
+    }
+
+
    #searchbar{
     position: initial;
     order: 4;
     width: 100%;
+    top: 20px;
+    }
+
+    #searchbar input{
+        width: 30%;
     }
 
 
     nav {
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        /* justify-content: space-between; */
+        margin-bottom: -20px;
     }
  
 
@@ -876,18 +892,15 @@ footer img {
     
 
   
-    nav ul li:not(:first-child):not(:last-child){
+    /* nav ul li:not(:first-child):not(:last-child){
      
         order: 2;
         left: 0;
         
-    }  
+    }   */
     
-    
-    .street{
-        margin-top: -40px;
-    }
 
+    
     .street h1{
         font-size: 30px;
         text-align: center;
@@ -977,19 +990,33 @@ dd, dt{
 }
 
 
-nav ul li:first-child{
+/* nav ul li:first-child{
    order: 1;
-}
+} */
 
-#ingredients ul li{
-    margin-top: -25px;
+#ingredients{
+    margin-bottom: 20px;
 }
-
 
 #ingredients h2{
     color: black;
+   
 }
 
+#ingredients ul{
+    margin-top: 50px;
+}
+
+#ingredients ul li{
+    margin-top: 15px;
+}
+
+#ingredients ol li{
+    line-height: 28px;
+    margin-right: 20px;
+    margin-top: 10px;
+    
+}
 .arrange{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1014,7 +1041,9 @@ nav ul li:first-child{
  }
 
 
- 
+ .sidewrapper{
+    margin-top: 10px;
+ }
 
  footer {
     display: flex;
