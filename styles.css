@@ -447,7 +447,7 @@ main{
  #searchbar{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin-top: -92px;
  }
 
 .sidecontainer a{
@@ -767,8 +767,6 @@ footer img {
     order: 3;
     margin-top: 10px;
     margin-right: 20px;
-   
- 
 }
 
 .tacostyle h2{
